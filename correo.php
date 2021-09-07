@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_POST['enviar'])) {
-	if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['mensaje'])) {
+	
 	
 		$destinatario = "aldanielarguelles@gmail.com";
 		$nombre = $_POST['nombre'];
@@ -14,7 +14,7 @@ if (isset($_POST['enviar'])) {
 
 		mail($destinatario, $asunto, $mensajeCompleto, $header);
 		echo "<script>alert('Mensaje enviado exitosamente')</script>";
-	}
+	
 }
 
 ?>
