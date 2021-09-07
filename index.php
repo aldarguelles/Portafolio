@@ -104,7 +104,7 @@
 		<img src="imagenes/memoria.jpg" class="img-memoria" title="Juego de memoria" alt="juego de memoria">
 	</section>
 	<section id="contacto">
-		<form class="contenedor-contacto" action="correo.php" method="POST">
+		<form class="contenedor-contacto" method="POST">
 			<h3>Contáctame por</h3>
 			<input type="text" class="nombre" name="nombre" placeholder="Nombre" required>
 			<input type="email" class="email" name="email" placeholder="Correo" required>
