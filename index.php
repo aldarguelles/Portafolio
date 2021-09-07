@@ -104,7 +104,7 @@
 		<img src="imagenes/memoria.jpg" class="img-memoria" title="Juego de memoria" alt="juego de memoria">
 	</section>
 	<section id="contacto">
-		<form class="contenedor-contacto" method="POST">
+		<form class="contenedor-contacto" action="correo.php" method="POST">
 			<h3>Contáctame por</h3>
 			<input type="text" class="nombre" name="nombre" placeholder="Nombre" required>
 			<input type="email" class="email" name="email" placeholder="Correo" required>
@@ -116,23 +116,7 @@
 		</form>
 	</section>
 	<?php
-		if (isset($_POST['enviar'])) {
-			if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['mensaje'])) {
-			
-				$destinatario = "aldanielarguelles@gmail.com";
-				$nombre = $_POST['nombre'];
-				$asunto = "Mensaje del portafolio";
-				$email = $_POST['email'];
-				$mensaje = $_POST['mensaje'];
-
-				$header = "Enviado desde mi portafolio";
-				$mensajeCompleto = $mensaje "\nNombre: " . $nombre "\nCorreo: " . $email;
-
-				mail($destinatario, $asunto, $mensajeCompleto, $header);
-				echo "<script>alert('Mensaje enviado exitosamente')</script>";
-			}
-}
-
+		include("correo.php");
 	?>
 </body>
 </html>

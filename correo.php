@@ -1,6 +1,6 @@
 <?php
 
-if (isset(&$_POST['enviar'])) {
+if (isset($_POST['enviar'])) {
 	if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['mensaje'])) {
 	
 		$destinatario = "aldanielarguelles@gmail.com";
