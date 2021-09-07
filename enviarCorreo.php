@@ -6,7 +6,7 @@ $msjCliente    = $_POST['msjCliente'];
 
 $paraCliente    = "aldanielarguelles@gmail.com";
 $tituloCliente  = "Mi Formulario de Contacto..";
-$mensajeCliente = $msjCliente "\nNombre: " . $nombreCliente "\nCorreo: " . $emailCliente;
+$mensajeCliente = $msjCliente . "\nNombre: " . $nombreCliente . "\nCorreo: " . $emailCliente;
 
 $cabecerasCliente  = 'MIME-Version: 1.0' . "\r\n";
 $cabecerasCliente .= 'Content-type: text/html; charset=utf-8' . "\r\n";
