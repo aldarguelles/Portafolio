@@ -104,11 +104,11 @@
 		<img src="imagenes/memoria.jpg" class="img-memoria" title="Juego de memoria" alt="juego de memoria">
 	</section>
 	<section id="contacto">
-		<form class="contenedor-contacto" action="correo.php" method="POST">
+		<form class="contenedor-contacto" action="prueba.php" method="POST">
 			<h3>Contáctame por</h3>
-			<input type="text" class="nombre" name="nombre" placeholder="Nombre" required>
-			<input type="email" class="email" name="email" placeholder="Correo" required>
-			<textarea class="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+			<input type="text" class="nombre" name="nombre" placeholder="Nombre">
+			<input type="email" class="email" name="email" placeholder="Correo">
+			<textarea class="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
 			<input type="submit" class="enviar" name="enviar" value="Enviar">
 			<a href="https://www.linkedin.com/in/aldarguelles/" target="_blank" class="linkedin"><span class="icon-linkedin"></span></a>
 			<a href="https://github.com/aldarguelles" target="_blank" class="github"><span class="icon-github"></span></a>
