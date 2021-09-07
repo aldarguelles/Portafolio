@@ -12,7 +12,7 @@ if (isset($_POST['enviar'])) {
 		$header = "Enviado desde mi portafolio";
 		$mensajeCompleto = $mensaje "\nNombre: " . $nombre "\nCorreo: " . $email;
 
-		mail($destinatario, $asunto, $mensajeCompleto, $header);
+		$enviar = mail($destinatario, $asunto, $mensajeCompleto, $header);
 		echo "<script>alert('Mensaje enviado exitosamente')</script>";
 	
 }
