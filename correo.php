@@ -5,7 +5,7 @@ if (isset(&$_POST['enviar'])) {
 	
 		$destinatario = "aldanielarguelles@gmail.com";
 		$nombre = $_POST['nombre'];
-		$asunto = "Mensaje del portafolio"
+		$asunto = "Mensaje del portafolio";
 		$email = $_POST['email'];
 		$mensaje = $_POST['mensaje'];
 
